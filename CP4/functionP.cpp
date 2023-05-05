@@ -73,7 +73,7 @@ void forFunc2(T &&x)
     std::cout << "forFunc2" << std::endl;
 }
 
-//  值传递
+//  值传递,会衰退！
 // 1. 和之前一样，如果expr的类型是一个引用，忽略这个引用部分
 // 2. 如果忽略expr的引用性（reference-ness）之后，expr是一个const，那就再忽略const。如果它是volatile，也忽略volatile
 // 3. 在模板类型推导时，数组名或者函数名实参会退化为指针，除非它们被用于初始化引用

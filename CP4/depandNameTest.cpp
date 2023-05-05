@@ -1,35 +1,25 @@
 #include <iostream>
 
-/**
-//  *   dependName and non-dependName
-*/
-
 template <typename T>
-struct parser;
-
-void handle(double value)
+struct foo
 {
-    std::cout << "double" << std::endl;
-}
-
-template <typename T>
-struct parser
-{
-    void parse()
-    {
-        handle(63); //这个属于依赖名称，在模板定义时执行. 因此这里绑定的是double的。
-    }
+    static T value;
 };
 
-void handle(int value)
-{
-    std::cout << "int" << std::endl;
-}
+template <typename T>
+T foo<T>::value = 0;
 
+template <>
+int foo<int>::value = 200;
 
 int main()
 {
-    parser<int> p;
-    p.parse();
+    foo<double> a, b;
+    foo<int> c;
+    std::cout << a.value << std::endl;
+    std::cout << c.value << std::endl;
+    a.value = 20000;
+    std::cout << b.value << std::endl;
+    std::cout << c.value << std::endl;
     return 0;
 }
