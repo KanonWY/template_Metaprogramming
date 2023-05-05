@@ -76,9 +76,19 @@ Most of the uses of function templates involve the automatic deduction of types.
 
 2、模板参数列表表示模板参数列表中的顺序，该顺序仅针对偏特化。偏特化的模板参数列表不能与模板参数列表所表示的模板参数列表相同。
 
+### 代码组织形式
+
+只要是模板，就要像宏一样写在同一个文件中，如果是特例，就要像普通函数（或者类）一样，声明写在头文件中，实现写在源文件中。
+
+[特化代码组织形式](https://blog.csdn.net/fl2011sx/article/details/100588160)
+
+[c++ header-only](https://v1otusc.github.io/2021/05/28/C++-inline-hpp/)
 
 
 
+### ppt
+
+[ppt1](https://netcan.github.io/presentation/metaprogramming/#/_%E8%AE%AE%E7%A8%8B)
 
 
 
