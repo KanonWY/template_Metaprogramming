@@ -18,3 +18,4 @@ find_package(PythonInterp REQUIRED)
 
 
 add_subdirectory(tinyMeta)
+add_subdirectory(CP4)

@@ -1,0 +1,19 @@
+/opt/cmake-3.25.3/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/235/bin/ninja/linux/x64/ninja -G Ninja -S /home/kanon/Project/template_Metaprogramming -B /home/kanon/Project/template_Metaprogramming/cmake-build-debug
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- ----> found yaml-cpp
+-- Found PythonInterp: /usr/bin/python (found version "3.8.10") 
+-- ----> SOURCE/home/kanon/Project/template_Metaprogramming/CP4/MixinsTest.cpp/home/kanon/Project/template_Metaprogramming/CP4/depandNameTest.cpp/home/kanon/Project/template_Metaprogramming/CP4/functionP.cpp/home/kanon/Project/template_Metaprogramming/CP4/function_overload.cpp/home/kanon/Project/template_Metaprogramming/CP4/function_template.cpp/home/kanon/Project/template_Metaprogramming/CP4/function_template_param.cpp/home/kanon/Project/template_Metaprogramming/CP4/particalspecial.cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kanon/Project/template_Metaprogramming/cmake-build-debug

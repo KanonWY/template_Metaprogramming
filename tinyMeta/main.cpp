@@ -2,51 +2,35 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "base_2.h"
-#include "base_3.h"
+#include <array>
+#include "base.h"
 
-struct widget
+template <typename T, typename R>
+void func(T &a, R b)
 {
-    widget() {}
-    widget(int) {}
-};
-
-struct Test
-{
-    Test() = default;
-    Test(const Test &rhs) = delete;
-};
-
-using namespace kanon;
-
-bool getBool()
-{
-    return true;
+    std::cout << "func(T)" << std::endl;
 }
 
-int testGetFuncRetType()
+// 属于模板重载吧
+template <typename T, typename R>
+void func(T const &a, R b)
 {
-    auto foo = []() -> double {
-        return 200;
-    };
-
-    getRet_t<decltype(foo)> a;
-
-    std::cout << std::is_same_v<std::decay_t<decltype(a)>, int> << std::endl;
-
-    return 0;
+    std::cout << "func(T const)" << std::endl;
 }
 
-struct Mai
+template <typename T, typename kanon::enable_if_t<std::is_integral<T>::value>>
+void foo(T &a)
 {
-    inline static int a{20};
-    int b{30};
-};
+}
+
+template <typename T, typename S,
+          typename = typename kanon::enable_if_t<
+              kanon::conjunction<kanon::is_same<T, int>, kanon::is_same<S, float>>::value>>
+void moo(T a, S b)
+{
+}
 
 int main()
 {
-    auto b = &Mai::a;
-    auto mm = &Mai::b;
-
     return 0;
 }

@@ -1,0 +1,155 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "tinyMeta",
+					"jsonFile" : "directory-tinyMeta-Debug-77026ef8ae8c12277970.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tinyMeta",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "CP4",
+					"jsonFile" : "directory-CP4-Debug-28e14d5adafaa748cdbd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "CP4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "CP4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "MixinsTest::@c8a7dc8c9fb28e827d1a",
+					"jsonFile" : "target-MixinsTest-Debug-6c50f99580c6edf225d7.json",
+					"name" : "MixinsTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "depandNameTest::@c8a7dc8c9fb28e827d1a",
+					"jsonFile" : "target-depandNameTest-Debug-f8c59cfacd7e94af89df.json",
+					"name" : "depandNameTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "functionP::@c8a7dc8c9fb28e827d1a",
+					"jsonFile" : "target-functionP-Debug-f98b7679e8c1124f8796.json",
+					"name" : "functionP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "function_overload::@c8a7dc8c9fb28e827d1a",
+					"jsonFile" : "target-function_overload-Debug-181f3a842958d39b4962.json",
+					"name" : "function_overload",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "function_template::@c8a7dc8c9fb28e827d1a",
+					"jsonFile" : "target-function_template-Debug-eceaf6d459fa34ebf05a.json",
+					"name" : "function_template",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "function_template_param::@c8a7dc8c9fb28e827d1a",
+					"jsonFile" : "target-function_template_param-Debug-c028a4edd92fabd60063.json",
+					"name" : "function_template_param",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "particalspecial::@c8a7dc8c9fb28e827d1a",
+					"jsonFile" : "target-particalspecial-Debug-89dc61a2c8b56b808844.json",
+					"name" : "particalspecial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "testMeta::@e129215761204f980415",
+					"jsonFile" : "target-testMeta-Debug-cdc57a1bea01d8dfc348.json",
+					"name" : "testMeta",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kanon/Project/template_Metaprogramming/cmake-build-debug",
+		"source" : "/home/kanon/Project/template_Metaprogramming"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
